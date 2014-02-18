@@ -20,7 +20,6 @@ $path = './cache/'; // save here
 $screen = new Screenshoter($website, $path);
 
 // options:
-$screen->size('original');
 $screen->format('png');
 
 // First: Desktops
