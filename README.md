@@ -19,18 +19,17 @@ $path = './cache/'; // save here
 
 $screen = new Screenshoter($website, $path);
 
-// options:
 $screen->format('png');
 
 // First: Desktops
 $screen->device('desktop');
-echo $screen->run('desktop.png')."<br/>";
+echo $screen->shoot('desktop.png')."<br/>";
 
 // Second: Tablets
 $screen->device('tablet');
-echo $screen->run('tablet.png')."<br/>";
+echo $screen->shoot('tablet.png')."<br/>";
 
 // Third: Smartphones
 $screen->device('smartphone');
-echo $screen->run('smartphone.png')."<br/>";
+echo $screen->shoot('smartphone.png')."<br/>";
 ```
