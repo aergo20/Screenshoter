@@ -17,7 +17,7 @@ $path = './cache/'; // Folder to save image
 $screen = new Screenshoter($website, $path);
 $screen->device('tablet'); // optional
 $screen->format('jpg'); // optional
-$screen->run('image'); // returns OK or Error with message
+$screen->shoot('image'); // returns OK or Error with message
 
 */
 
@@ -69,7 +69,7 @@ class Screenshoter
 		$this->endpoint = $endpoint;
 	}
 
-	public function run($name){
+	public function shoot($name){
 
 		$call = $this->endpoint."://screenshoter.com/?uri=".$this->website."&viewport=".$this->device."&type=".$this->type."&size=".$this->size."&format=".$this->format;
 
