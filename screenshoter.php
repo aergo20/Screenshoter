@@ -34,7 +34,7 @@ class Screenshoter
 	private $endpoint; // http (default) | https
 
 	public function __construct($website, $path){
-		$this->website = $website;
+		$this->website = urlencode($website);
 		$this->path = $path;
 
 		$this->device = "desktop";
@@ -62,7 +62,7 @@ class Screenshoter
 	}
 
 	public function selector($selector){
-		$this->format = $selector;
+		$this->selector = urlencode($selector);
 	}
 
 	public function endpoint($endpoint){
