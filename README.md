@@ -35,9 +35,6 @@ echo $screen->shoot('smartphone.png')."<br/>";
 ```
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/evandro92/screenshoter/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
-
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/evandro92/screenshoter/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
